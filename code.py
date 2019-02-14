@@ -115,6 +115,8 @@ def single_row_stars (number):
         print('*',end ='')
     print()
 
+code.single_row_stars(4)
+
 def rewrite(mnumber):
 	for each in range(mnumber):
 		print('*',end="")
