@@ -158,6 +158,8 @@ def list_by_2(a_list):
         new_list.append(n*2)
     return new_list #or just print(new_list)
 
+print(list_by_2(a_list))
+
 #create_grid(4)
 #[['-','-','-','-'],['-','-','-','-'],['-','-','-','-'],['-','-','-','-']]
 
@@ -170,6 +172,7 @@ def create_grid(size):
         new_grid.append(new_list)
     return new_grid
 
+print(create_grid(4))
 
 #change the content of list
 a = ['x','y','z','b']
