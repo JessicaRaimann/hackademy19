@@ -214,4 +214,28 @@ def is_duplicate_there2(list_a, list_b):
             return True
 	return False
 
+class Cell(): #class: type of object, that can the followed things
+    
+    def say_hello(self): #self is not a variable as usual, it referres to the object of the class
+        print('Hello I am a cell.')
+        
+    def give_name(self, a_name): #only one argument --> a_name
+        self.name = a_name
+    
+    def give_age(self, an_age):
+        self.age = an_age
+    
+    def make_cell_older(self):
+        self.age = self.age + 1
+        
+c = Cell()
+c.say_hello()#Cell() muss vorher stehen, da sich def say hello darin befindet
+c.give_name('Alice')
+c.give_age(12)
+c.make_cell_older()
 
+d = Cell() #two different cells but the same attribution
+d.say_hello()
+d.give_name('Jessi')
+c.give_age(20)
+c.make_cell_older()
